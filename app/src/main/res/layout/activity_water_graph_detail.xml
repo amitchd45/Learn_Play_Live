@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_green"
+    android:orientation="vertical"
+    tools:context=".HomeBottom.Hydration.WaterGraphDetailActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/waterGraphTAbLayout"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorHeight="1dp"
+        android:layout_marginTop="@dimen/space10"
+        app:tabMode="fixed"
+        android:padding="@dimen/space3"
+
+        >
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/waterGraphTAbLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/waterGraphViewPager"
+        >
+    </androidx.viewpager.widget.ViewPager>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_minimize"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/waterGraphTAbLayout"
+        android:layout_marginTop="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:padding="@dimen/space10"
+        android:id="@+id/minimizeGraph"/>
+
+</RelativeLayout>

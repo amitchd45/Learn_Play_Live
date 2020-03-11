@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drawer.ProfileActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/top_profile"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_profile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+            android:layout_marginBottom="@dimen/space30"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/space120"
+                    android:layout_height="@dimen/space120"
+                    android:src="@drawable/profile_pic"
+                    app:civ_border_color="@color/white"
+                    android:id="@+id/civ_profile"
+                    app:civ_border_width="1dp"/>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/space35"
+                    android:layout_height="@dimen/space35"
+                    android:src="@drawable/ic_add"
+                    android:id="@+id/addNewImage"
+                    android:layout_toRightOf="@id/civ_profile"
+                    android:layout_marginLeft="-25dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="@dimen/space3"
+
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_marginTop="@dimen/space10"
+                    android:textSize="@dimen/text12"
+                    android:padding="@dimen/space5"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space5"
+                    android:layout_margin="@dimen/space5"
+                    android:elevation="@dimen/space10">
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text14"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:hint="Mandy Thomson"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:background="@drawable/colorless"
+                        android:padding="@dimen/space10"
+                        android:enabled="false"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:layout_marginTop="@dimen/space10"
+                    android:textSize="@dimen/text12"
+                    android:padding="@dimen/space5"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space5"
+                    android:layout_margin="@dimen/space5"
+                    android:elevation="@dimen/space10">
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text14"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:hint="9876543210"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:background="@drawable/colorless"
+                        android:padding="@dimen/space10"
+                        android:enabled="false"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:layout_marginTop="@dimen/space10"
+                    android:textSize="@dimen/text12"
+                    android:padding="@dimen/space5"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space5"
+                    android:layout_margin="@dimen/space5"
+                    android:elevation="@dimen/space10">
+
+                    <EditText
+                        android:id="@+id/et_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text14"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:hint="Chandigarh"
+                        android:maxLines="1"
+                        android:background="@drawable/colorless"
+                        android:padding="@dimen/space10"
+                        android:enabled="false"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Me"
+                    android:layout_marginTop="@dimen/space10"
+                    android:textSize="@dimen/text12"
+                    android:padding="@dimen/space5"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space5"
+                    android:layout_margin="@dimen/space5"
+                    android:elevation="@dimen/space10">
+
+                    <EditText
+                        android:id="@+id/et_aboutMe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text14"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:hint="Mandy Thomson"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:background="@drawable/colorless"
+                        android:padding="@dimen/space10"
+                        android:enabled="false"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Birthday"
+                    android:layout_marginTop="@dimen/space10"
+                    android:textSize="@dimen/text12"
+                    android:padding="@dimen/space5"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space5"
+                    android:layout_margin="@dimen/space5"
+                    android:elevation="@dimen/space10">
+
+                    <EditText
+                        android:id="@+id/et_dob_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text14"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:hint="Jul 11 1995"
+                        android:maxLines="1"
+                        android:background="@drawable/colorless"
+                        android:padding="@dimen/space10"
+                        android:enabled="false"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sex"
+                    android:layout_marginTop="@dimen/space10"
+                    android:textSize="@dimen/text12"
+                    android:padding="@dimen/space5"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space5"
+                    android:layout_margin="@dimen/space5"
+                    android:elevation="@dimen/space10">
+
+                    <Spinner
+                        android:id="@+id/profile_gender_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space40"
+                        android:padding="@dimen/space10"
+                        android:enabled="false"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:layout_marginTop="@dimen/space10"
+                    android:textSize="@dimen/text12"
+                    android:padding="@dimen/space5"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space5"
+                    android:layout_margin="@dimen/space5"
+                    android:layout_marginBottom="@dimen/space30"
+                    android:elevation="@dimen/space10">
+
+                    <EditText
+                        android:id="@+id/et_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text14"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:hint="5 feet 3 inches"
+                        android:maxLines="1"
+                        android:background="@drawable/colorless"
+                        android:padding="@dimen/space10"
+                        android:enabled="false"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:text="SAVE"
+                android:textColor="@color/white"
+                android:background="@drawable/background_button"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text18"
+                android:padding="@dimen/space10"
+                android:layout_marginTop="@dimen/space30"
+                android:id="@+id/btn_save_profile"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

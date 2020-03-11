@@ -1,0 +1,288 @@
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/green"
+    android:verticalScrollbarPosition="right"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space20"
+        android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile_pic"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/NameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Mandy Thomson"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/DateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Joined Aug 13, 2019"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <View
+                android:layout_marginTop="@dimen/space30"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/fade"/>
+
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/ProfileTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Profile"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_avatar"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <View
+                android:layout_marginTop="@dimen/space5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/fade"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Devices"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:padding="@dimen/space3"
+                android:id="@+id/setUpDeviceTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Set up a Device"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_add_a_device"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_marginTop="@dimen/space5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/fade"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Goals"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/summaryTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="7-Days Summary"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_contract"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/activityTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Activity"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_activity"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/exerciseTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Exercise"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_exercise"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/nutritionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/nutrition_body"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_contract"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_marginTop="@dimen/space5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/fade"/>
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/privacy_security"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/privacyTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Privacy"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_lock"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/securityTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/security_login"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_lock"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/notificationTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Notification"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_notification"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/manageDataTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Manage Data"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_manage_data"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/blockedTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Blocked Users"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_blocked"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:padding="@dimen/space3"
+                android:id="@+id/logoutTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Logout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_logout"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+</com.google.android.material.navigation.NavigationView>

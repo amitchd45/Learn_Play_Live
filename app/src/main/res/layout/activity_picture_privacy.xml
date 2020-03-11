@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Drawer.PicturePrivacyActivity">
+
+    <include layout="@layout/topbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:padding="@dimen/space10"
+                    android:src="@drawable/ic_lock_privacy"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:padding="@dimen/space10"
+                    android:src="@drawable/ic_friends"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:padding="@dimen/space10"
+                    android:src="@drawable/ic_public"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="@dimen/space10"
+                    android:padding="@dimen/space12"
+                    android:textAlignment="textStart"
+                    android:buttonTint="@color/orange"
+                    android:textSize="@dimen/text14"
+                    android:text="Private"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="@dimen/space10"
+                    android:padding="@dimen/space12"
+                    android:textAlignment="textStart"
+                    android:buttonTint="@color/orange"
+                    android:textSize="@dimen/text14"
+                    android:text="Friends"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:layout_marginTop="@dimen/space12"
+                    android:padding="@dimen/space10"
+                    android:textAlignment="textStart"
+                    android:buttonTint="@color/orange"
+                    android:textSize="@dimen/text14"
+                    android:text="Public"/>
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

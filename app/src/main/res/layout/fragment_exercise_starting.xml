@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".HomeBottom.Fitness.FitnessFragments.ExerciseStartingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space10"
+        android:src="@drawable/exercise_green_run"
+        android:id="@+id/green_run"
+        />
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_marginTop="@dimen/space10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/green_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 of 5 days"
+        android:layout_marginLeft="@dimen/space10"
+        android:textSize="@dimen/text16"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+
+        />
+    <TextView
+        android:layout_below="@id/tv_1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/health_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New week, new chances. Let's do this!"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginBottom="@dimen/space10"
+        android:textSize="@dimen/text12"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

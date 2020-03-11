@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "201660681520",
+    "firebase_url": "https://learn-play-live.firebaseio.com",
+    "project_id": "learn-play-live",
+    "storage_bucket": "learn-play-live.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201660681520:android:c714fc056c014bb7e64cf5",
+        "android_client_info": {
+          "package_name": "com.example.learnplaylive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201660681520-gkjhf6bj0084rvdr0hprqjotb1a3g29m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.learnplaylive",
+            "certificate_hash": "5aaaecc4502ebb74fd1cf33b40453185f167fdaa"
+          }
+        },
+        {
+          "client_id": "201660681520-6870qrrb25vf3dc1pbjgvsc1p78k0734.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhbxFy8zc9TfHcYO-hvcepBeHz6nTtw1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201660681520-6870qrrb25vf3dc1pbjgvsc1p78k0734.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

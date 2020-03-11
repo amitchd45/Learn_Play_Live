@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:id="@+id/topLearnRl">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/healthDataItem"
+        android:elevation="@dimen/space10"
+        app:cardCornerRadius="@dimen/space10"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/learn_img"
+            android:layout_marginTop="-20dp"
+
+            />
+
+        <TextView
+            android:padding="@dimen/space5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:textColor="@color/black"
+            android:layout_marginTop="-20dp"
+            android:text="The Perfect Treatement For Diabetes..."
+            />
+            <TextView
+                android:padding="@dimen/space5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text10"
+                android:text="28 July 2019"/>
+
+            <TextView
+                android:padding="@dimen/space5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text10"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+
+        android:padding="@dimen/space5"
+        android:id="@+id/shareSaveLl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/healthDataItem"
+        android:layout_marginTop="@dimen/space5"
+        android:layout_alignParentRight="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_share"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text12"
+            android:text="Share"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:textColor="@color/blue"
+            android:src="@drawable/ic_save"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text12"
+            android:text="Save"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/topLearnRl"
+        android:layout_marginTop="@dimen/space5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space4"
+        android:background="@color/muchgrey"
+        android:layout_marginBottom="@dimen/space10"/>
+
+</RelativeLayout>

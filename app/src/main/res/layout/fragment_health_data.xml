@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".HealthDataFragment">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/space200"
+       android:background="@drawable/fitness_top_bg"
+       >
+
+       <include layout="@layout/topbar2"/>
+
+   </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/space10">
+
+    <com.vivekkaushik.datepicker.DatePickerTimeline
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="bottom"
+        android:backgroundTint="@color/green"
+        style="@style/CardView"
+        />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wednesday,Apr 4, 2019"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text14"
+        android:layout_marginTop="@dimen/space15"
+        />
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/healthDataRecyclerView"
+                android:layout_marginTop="@dimen/space5"/>
+
+
+
+
+
+
+</LinearLayout>

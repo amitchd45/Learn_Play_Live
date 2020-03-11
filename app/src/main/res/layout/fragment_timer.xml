@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timer_background_gradient"
+    tools:context=".HomeBottom.Fitness.FitnessFragments.TimerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="0.0"
+       android:textSize="@dimen/space40"
+       android:textColor="@color/white"
+       android:fontFamily="@font/poppins_regular"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="@dimen/space40"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="miles"
+        android:textSize="@dimen/space14"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_centerHorizontal="true"
+        />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/space30"
+            android:layout_marginLeft="@dimen/space30"
+            android:layout_marginTop="@dimen/space20">
+
+        <LinearLayout
+            android:layout_width="@dimen/space130"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+
+            >
+
+        <TextView
+            android:id="@+id/timerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00:00"
+            android:textSize="@dimen/space30"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textSize="@dimen/space14"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/space130"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00:00"
+                android:textSize="@dimen/space30"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space20"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pace"
+                android:textSize="@dimen/space14"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

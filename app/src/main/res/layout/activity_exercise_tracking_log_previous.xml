@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.Fitness.FitnessActivity.ExerciseTrackingLogPreviousActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/top_tracking"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trackingTAbLayout"
+        app:tabTextColor="@color/black"
+        android:layout_below="@id/top_tracking"
+        app:tabIndicatorColor="@color/orange"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorHeight="@dimen/space2"
+        android:layout_marginTop="@dimen/space5"
+        android:padding="@dimen/space2"
+        >
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/trackingTAbLayout"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/trackingTAbLayout">
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space700"
+                android:id="@+id/trackingViewPager"
+
+                >
+            </androidx.viewpager.widget.ViewPager>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

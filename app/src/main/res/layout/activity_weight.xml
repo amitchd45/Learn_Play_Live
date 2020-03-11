@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.Weight.Activity.WeightActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space200"
+            android:id="@+id/exercise_top_lay"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space200"
+
+                android:background="@drawable/weight_top_bg"
+                android:id="@+id/exercise_bg_img"/>
+
+            <include layout="@layout/topbar2"
+                android:id="@+id/top_fitness"
+                />
+            <TextView
+                android:id="@+id/tt_title_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:layout_marginLeft="@dimen/space10"
+                android:textSize="@dimen/text16"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:layout_above="@+id/health_exercise"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/space10"
+                />
+
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_text"
+            android:layout_below="@+id/exercise_top_lay">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space15"
+                android:layout_marginRight="@dimen/space15"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/space15"
+                    android:id="@+id/ll_1"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_exercise_bold_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="@dimen/text12"
+                        android:text="Get to your goal weight. Log it often to see progre over time."
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/space15"
+                        android:textStyle="bold"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_1"
+                    android:id="@+id/ll_2"
+
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/space20"
+                            android:layout_height="@dimen/space20"
+                            android:layout_marginTop="@dimen/space15"
+                            android:id="@+id/colorLess_img"
+                            android:padding="6dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_checked"
+                            android:background="@drawable/background_circle_grey"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="@dimen/text12"
+                            android:text="Log weight, lean mass and body fat percentage.We'll calculate body mass index (BMI) for you."
+                            android:textColor="@color/black"
+                            android:layout_toRightOf="@id/colorLess_img"
+                            android:layout_marginLeft="@dimen/space15"
+                            android:layout_marginTop="@dimen/space15"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/space20"
+                            android:layout_height="@dimen/space20"
+                            android:padding="6dp"
+                            android:layout_margin="8dp"
+                            android:layout_marginTop="@dimen/space15"
+                            android:id="@+id/colorLess_img1"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_checked"
+                            android:background="@drawable/background_circle_grey"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="@dimen/text12"
+                            android:text="Set a goal to se gain or maintain weight, and we'll adjust your daily calorie needs."
+                            android:textColor="@color/black"
+                            android:layout_toRightOf="@id/colorLess_img1"
+                            android:layout_marginLeft="@dimen/space15"
+                            android:layout_marginTop="@dimen/space15"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="@dimen/space20"
+                            android:layout_marginTop="@dimen/space15"
+                            android:id="@+id/colorLess_img2"
+                            android:src="@drawable/ic_checked"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/background_circle_grey"
+                            android:padding="6dp"
+                            android:layout_margin="8dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="@dimen/text12"
+                            android:text="Connect a Lorem Ipsum Area scale to"
+                            android:textColor="@color/black"
+                            android:layout_toRightOf="@id/colorLess_img2"
+                            android:layout_marginLeft="@dimen/space15"
+                            android:layout_marginTop="@dimen/space15"
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_below="@+id/rl_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space55"
+                        android:text="OPEN"
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_button"
+                        android:layout_marginTop="@dimen/space30"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="@dimen/text18"
+                        android:padding="@dimen/space10"
+                        android:layout_marginLeft="@dimen/space15"
+                        android:layout_marginRight="@dimen/space15"
+                        android:layout_marginBottom="@dimen/space30"
+                        android:id="@+id/openWeightBtn"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

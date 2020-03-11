@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeBottom.Hydration.WaterGoalActivity">
+
+    <include layout="@layout/topbar"/>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="10dp"-->
+<!--            android:src="@drawable/ic_back_black" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:text="Water"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--    </RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/waterGoalTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Water Goal"
+        android:textColor="@color/green"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/waterGoalLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space30"
+        android:padding="@dimen/space5"
+        android:layout_marginLeft="@dimen/space5"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Daily Water Goal"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="1,893 ml"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/water_is_essential_"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/waterUnitsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Water Units"
+        android:textColor="@color/green"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:id="@+id/waterUnitLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space30"
+        android:padding="@dimen/space5"
+        android:layout_marginLeft="@dimen/space5"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Units"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Milliliters(ml)"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+    </LinearLayout>
+
+</LinearLayout>

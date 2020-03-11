@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/colorLess_img2"
+            android:layout_width="20dp"
+            android:layout_height="@dimen/space20"
+            android:layout_margin="8dp"
+            android:layout_marginTop="@dimen/space15"
+            android:background="@drawable/background_circle_grey"
+            android:padding="6dp"
+            android:src="@drawable/ic_checked" />
+
+        <TextView
+            android:id="@+id/point3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginTop="@dimen/space15"
+            android:layout_toRightOf="@id/colorLess_img2"
+            android:fontFamily="@font/poppins_regular"
+            android:text="We can auto-detect upto 7 differrent exercises.*"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text12" />
+    </RelativeLayout>
+
+</LinearLayout>

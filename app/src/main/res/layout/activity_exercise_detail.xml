@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.Fitness.FitnessActivity.ExerciseDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space250"
+            android:background="@drawable/gradient_green"
+            android:id="@+id/exercise_top_lay">
+
+            <include layout="@layout/topbar2"
+                android:id="@+id/top_fitness"
+                />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_fitness"
+                android:id="@+id/fragmentViewPager">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/circleindicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space8"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/space10"
+                android:layout_below="@id/fragmentViewPager"
+                android:layout_marginTop="-30dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/exercise_top_lay"
+            android:layout_marginTop="@dimen/space20"
+           >
+
+            <ImageView
+                android:layout_width="@dimen/space20"
+                android:layout_height="@dimen/space20"
+                android:id="@+id/color_exercise_img"
+                android:layout_marginLeft="@dimen/space15"
+                android:src="@drawable/ic_checked"
+                android:padding="6dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_circle_grey"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/color_exercise_img"
+                android:layout_marginLeft="@dimen/space10"
+                android:text="Going for a walk, run or hike? Track it from the Learn Play Live app to map your route and pace."
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text12"
+                android:id="@+id/tv_exercise"
+                android:layout_marginRight="@dimen/space15"
+                />
+
+            <View
+                android:layout_below="@id/tv_exercise"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space3"
+                android:background="@color/verylightgrey"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Your logged exercise will appear here"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text12"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

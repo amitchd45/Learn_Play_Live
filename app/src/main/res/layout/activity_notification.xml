@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Drawer.NotificationActivity">
+
+    <include layout="@layout/topbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:textColor="@color/black"
+            android:text="Push Notifications"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space5"
+            android:layout_marginTop="@dimen/space10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:text="Low Battery"
+                android:layout_alignParentLeft="true"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space5"
+            android:layout_marginTop="@dimen/space10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:text="Step Goal Milestones"
+                android:layout_alignParentLeft="true"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space5"
+            android:layout_marginTop="@dimen/space10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:text="New Badges"
+                android:layout_alignParentLeft="true"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space5"
+            android:layout_marginTop="@dimen/space10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:text="Friend Request"
+                android:layout_alignParentLeft="true"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space5"
+            android:layout_marginTop="@dimen/space10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:text="Exercise Goal Milestone"
+                android:layout_alignParentLeft="true"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space5"
+            android:layout_marginTop="@dimen/space10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:text="Challenges"
+                android:layout_alignParentLeft="true"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space5"
+            android:layout_marginTop="@dimen/space10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:text="Programs"
+                android:layout_alignParentLeft="true"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space5"
+            android:layout_marginTop="@dimen/space10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space10"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:text="Email Notifications"
+                android:layout_alignParentLeft="true"
+                />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageFragment"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_item"
+                android:elevation="0.001dp"
+                android:layout_marginTop="@dimen/space13"
+
+                android:padding="@dimen/space5"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/space1"
+                android:background="@drawable/corners_three_roun"
+                android:layout_marginTop="@dimen/space100"
+                android:layout_marginLeft="@dimen/space30"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="How Can We Help\n You Today?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text18"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="@dimen/space10"
+                    android:paddingRight="@dimen/space10"
+                    android:paddingTop="@dimen/space5"
+                    android:paddingBottom="@dimen/space5"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/top_homepage"
+                android:layout_marginTop="-60dp"
+                android:id="@+id/topimg_homepage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topimg_homepage"
+                android:layout_marginTop="-80dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/ll_one"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/medications">
+
+                    <ImageView
+                        android:layout_width="@dimen/space70"
+                        android:layout_height="@dimen/space70"
+                        android:src="@drawable/medications"
+                        android:id="@+id/img_medications"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medications"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_below="@id/img_medications"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/bloodsugar">
+
+                    <ImageView
+                        android:layout_width="@dimen/space70"
+                        android:layout_height="@dimen/space70"
+                        android:src="@drawable/bloodsugar"
+                        android:id="@+id/img_bloodsugar"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Sugar"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_below="@id/img_bloodsugar"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_one"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/ll_two"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/bloodPressure">
+
+                    <ImageView
+                        android:layout_width="@dimen/space70"
+                        android:layout_height="@dimen/space70"
+                        android:src="@drawable/bloodpressure"
+                        android:id="@+id/img_bloodpressure"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Pressure"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_below="@id/img_bloodpressure"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/fitness">
+
+                    <ImageView
+                        android:layout_width="@dimen/space70"
+                        android:layout_height="@dimen/space70"
+                        android:src="@drawable/fitness"
+                        android:id="@+id/img_fitness"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fitness"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_below="@id/img_fitness"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_below="@id/ll_two"
+                android:id="@+id/ll_three"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/hydration">
+
+                    <ImageView
+                        android:layout_width="@dimen/space70"
+                        android:layout_height="@dimen/space70"
+                        android:src="@drawable/hydration"
+                        android:id="@+id/img_hydration"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hydration"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_below="@id/img_hydration"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/weightRl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/space70"
+                        android:layout_height="@dimen/space70"
+                        android:src="@drawable/weight"
+                        android:id="@+id/img_weight"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_below="@id/img_weight"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_three"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/ll_four"
+
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/learn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/space70"
+                        android:layout_height="@dimen/space70"
+                        android:src="@drawable/learn"
+                        android:id="@+id/img_learn"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Learn"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_below="@id/img_learn"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/space70"
+                        android:layout_height="@dimen/space70"
+                        android:src="@drawable/play"
+                        android:id="@+id/img_play"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_below="@id/img_play"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

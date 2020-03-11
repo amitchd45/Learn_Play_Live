@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.BloodPressure.BloodPressureAcyivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/top_bloodPressure"/>
+
+    <RelativeLayout
+        android:id="@+id/relativetop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bloodPressure">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_bp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space200">
+
+
+                <LinearLayout
+                    android:id="@+id/bp_top_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space200"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4">
+
+
+                        <RelativeLayout
+                            android:id="@+id/circles_bp"
+                            android:layout_width="@dimen/space130"
+                            android:layout_height="@dimen/space130"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="50dp"
+                            android:background="@drawable/bluestroke10dp"
+                            android:padding="5dp">
+
+                            <RelativeLayout
+                                android:layout_margin="@dimen/space10"
+                                android:layout_width="115dp"
+                                android:layout_height="115dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_inner">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/percentage_circle_bp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="100%"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/space13" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:text="Grade 3 HyperTension"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:textSize="7sp" />
+
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1.6"
+
+
+                        >
+
+                        <TextView
+                            android:layout_above="@+id/tv_text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Days"
+                            android:layout_marginBottom="@dimen/space20"
+                            android:textSize="@dimen/text14"
+                            android:layout_centerInParent="true"/>
+
+                        <TextView
+                            android:id="@+id/tv_text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Grade 3 hypertension"
+                            android:textSize="@dimen/text14"
+                            android:layout_centerVertical="true"/>
+                        <TextView
+
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Tests"
+                            android:textSize="@dimen/text14"/>
+
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/space30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space30"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_alignParentBottom="true"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="10"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/text24"/>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="Period"
+                                    android:textSize="@dimen/text14"
+                                    />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="7"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text24"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text=" Average  "
+                                    android:textSize="@dimen/text14"
+                                    />
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text24"/>
+
+                            </LinearLayout>
+
+
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+
+
+
+                        </LinearLayout>
+
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:id="@+id/period_lay_bp"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:orientation="vertical"-->
+                        <!--                            android:weightSum=".9">-->
+
+
+                        <!--                            <TextView-->
+
+                        <!--                                android:id="@+id/tvperiod_bp"-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_gravity="center_horizontal"-->
+                        <!--                                android:layout_marginTop="20dp"-->
+                        <!--                                android:fontFamily="@font/humanst521_bt"-->
+                        <!--                                android:text="Period"-->
+                        <!--                                android:textColor="@color/grey"-->
+                        <!--                                android:textSize="@dimen/sp_13"-->
+                        <!--                                android:textStyle="bold" />-->
+
+                        <!--                            <TextView-->
+                        <!--                                android:id="@+id/period_count_bp"-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_gravity="center_horizontal"-->
+                        <!--                                android:layout_marginTop="10dp"-->
+                        <!--                                android:fontFamily="@font/humanst521_bt"-->
+                        <!--                                android:text="7"-->
+                        <!--                                android:textColor="@color/black"-->
+                        <!--                                android:textSize="35sp"-->
+                        <!--                                android:textStyle="bold" />-->
+
+                        <!--                            <RelativeLayout-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_gravity="right"-->
+
+                        <!--                                >-->
+
+                        <!--                                <TextView-->
+                        <!--                                    android:layout_width="wrap_content"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:fontFamily="@font/humanst521_bt"-->
+                        <!--                                    android:text="Days"-->
+                        <!--                                    android:textColor="@color/grey"-->
+
+
+                        <!--                                    />-->
+
+                        <!--                            </RelativeLayout>-->
+
+
+                        <!--                            <TextView-->
+                        <!--                                android:id="@+id/tvtest"-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_gravity="center_horizontal"-->
+                        <!--                                android:layout_marginTop="20dp"-->
+                        <!--                                android:fontFamily="@font/humanst521_bt"-->
+                        <!--                                android:text="Grade 3 HyperTension "-->
+                        <!--                                android:textColor="@color/grey"-->
+                        <!--                                android:textSize="@dimen/sp_13"-->
+                        <!--                                android:textStyle="bold"-->
+
+
+                        <!--                                />-->
+
+
+                        <!--                            <TextView-->
+                        <!--                                android:id="@+id/tension_count_bp"-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_gravity="center_horizontal"-->
+                        <!--                                android:layout_marginTop="10dp"-->
+                        <!--                                android:fontFamily="@font/humanst521_bt"-->
+                        <!--                                android:text="10"-->
+                        <!--                                android:textColor="@color/blue"-->
+                        <!--                                android:textSize="35sp"-->
+                        <!--                                android:textStyle="bold" />-->
+
+                        <!--                            <RelativeLayout-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_gravity="right">-->
+
+                        <!--                                <TextView-->
+                        <!--                                    android:layout_width="wrap_content"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:fontFamily="@font/humanst521_bt"-->
+                        <!--                                    android:text="Tests"-->
+                        <!--                                    android:textColor="@color/grey"-->
+
+
+                        <!--                                    />-->
+
+                        <!--                            </RelativeLayout>-->
+
+                        <!--                        </LinearLayout>-->
+
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:id="@+id/average_lay_bp"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_toRightOf="@+id/period_lay_bp"-->
+                        <!--                            android:orientation="vertical"-->
+
+                        <!--                            >-->
+
+                        <!--                            <TextView-->
+                        <!--                                android:id="@+id/tvtotaltest"-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_gravity="center_horizontal"-->
+                        <!--                                android:layout_marginTop="20dp"-->
+                        <!--                                android:fontFamily="@font/humanst521_bt"-->
+                        <!--                                android:text="Average"-->
+                        <!--                                android:textColor="@color/grey"-->
+                        <!--                                android:textSize="@dimen/sp_13"-->
+                        <!--                                android:textStyle="bold" />-->
+
+
+                        <!--                            <TextView-->
+                        <!--                                android:id="@+id/average_count_bp"-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_below="@id/tvaverage"-->
+                        <!--                                android:layout_gravity="center_horizontal"-->
+                        <!--                                android:layout_marginTop="10dp"-->
+                        <!--                                android:layout_toRightOf="@id/period_count"-->
+                        <!--                                android:fontFamily="@font/humanst521_bt"-->
+                        <!--                                android:text="10"-->
+                        <!--                                android:textColor="@color/black"-->
+                        <!--                                android:textSize="35sp"-->
+                        <!--                                android:textStyle="bold" />-->
+
+
+                        <!--                        </LinearLayout>-->
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/bp_center_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@id/bp_top_lay"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/green">
+
+
+                    <TextView
+                        android:id="@+id/date_bp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="17 July 2019 10:50 pm"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/bp_rate_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/date_bp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="30dp"
+                        android:gravity="center"
+
+                        >
+
+                        <TextView
+
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/bp_count_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="188/113"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text20"
+                            android:textStyle="bold"
+
+                            />
+
+
+                        <TextView
+                            android:id="@+id/units"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/bp_count_main"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="mm/hg"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text14" />
+
+
+                        <TextView
+
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/bp_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/units"
+                            android:drawableLeft="@drawable/ic_heart_black_shape_for_valentines"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="82"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text20"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/units_bp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/bp_rate"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="bpm"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text14"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/seekbar_lay_bp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bp_rate_lay"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/space60"
+                            android:layout_height="@dimen/space15"
+                            android:src="@drawable/seekbar_lightblue" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space60"
+                            android:layout_height="@dimen/space15"
+                            android:background="@color/yellow" />
+
+                        <ImageView
+                            android:id="@+id/seekbar3_bp"
+                            android:layout_width="@dimen/space60"
+                            android:layout_height="@dimen/space15"
+                            android:background="@color/pink" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space60"
+                            android:layout_height="@dimen/space15"
+                            android:background="@color/green_circle"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/space60"
+                            android:layout_height="@dimen/space15"
+                            android:background="@drawable/seekbar_end"
+
+                            />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.BloodSugar.BloodSugarActivity.BloodSugarStatsActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/top_bloodSugarStat"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@id/top_bloodSugarStat">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/bef_aft_gen"
+                    android:padding="@dimen/space10"
+                    android:background="#f5f5f5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/meal1"
+                        android:layout_toLeftOf="@id/cent_ll"
+                        android:background="@drawable/curved_green_outline"
+                        android:padding="@dimen/space5"
+                        android:layout_width="@dimen/space100"
+                        android:layout_height="@dimen/space50"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_before_meals"
+                            android:layout_gravity="center"
+                            android:layout_width="18dp"
+                            android:layout_height="@dimen/space18" />
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_circle_before"
+                                android:layout_marginRight="@dimen/space5"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_before_meal"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/text12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="Before Meal"
+                                android:layout_gravity="center" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="@dimen/space20"
+                        android:layout_marginLeft="@dimen/space20"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/cent_ll"
+                        android:background="@drawable/curved_green_outline"
+                        android:padding="@dimen/space5"
+                        android:layout_width="@dimen/space100"
+                        android:layout_height="@dimen/space50"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_after_mral"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/space18"
+                            android:layout_height="@dimen/space18" />
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_after_circle"
+                                android:layout_marginRight="@dimen/space5"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_after_meal"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/text12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="After Meal"
+                                android:layout_gravity="center" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/meal3"
+                        android:layout_toRightOf="@id/cent_ll"
+                        android:background="@drawable/curved_green_outline"
+                        android:padding="@dimen/space5"
+                        android:layout_width="@dimen/space100"
+                        android:layout_height="@dimen/space50"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_gen1"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/space18"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Gen" />
+
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_gen_circle"
+                                android:layout_marginRight="@dimen/space5"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/space12"
+                                android:layout_height="@dimen/space12"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_no_tag"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/space10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="No Tag"
+                                android:layout_gravity="center" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/bef_aft_gen"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:background="#f5f5f5"-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:weightSum="3">-->
+
+                <!--                    <RelativeLayout-->
+                <!--                        android:id="@+id/meal1"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="3dp"-->
+                <!--                        android:layout_marginRight="3dp"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:background="@drawable/analysis_lay_bg"-->
+                <!--                        android:padding="5dp">-->
+
+                <!--                        <ImageView-->
+                <!--                            android:id="@+id/meal1_img"-->
+                <!--                            android:layout_width="20dp"-->
+                <!--                            android:layout_height="20dp"-->
+                <!--                            android:layout_centerHorizontal="true"-->
+                <!--                            android:layout_marginTop="3dp"-->
+                <!--                            android:src="@drawable/meal" />-->
+
+                <!--                        <RelativeLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_below="@id/meal1_img"-->
+                <!--                            android:layout_centerHorizontal="true">-->
+
+                <!--                            <ImageView-->
+                <!--                                android:id="@+id/meal1_circle"-->
+                <!--                                android:layout_width="10dp"-->
+                <!--                                android:layout_height="10dp"-->
+                <!--                                android:layout_marginLeft="10dp"-->
+                <!--                                android:layout_marginTop="12dp"-->
+                <!--                                android:src="@drawable/white_circle" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:layout_width="wrap_content"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_marginLeft="5dp"-->
+                <!--                                android:layout_marginTop="8dp"-->
+                <!--                                android:layout_toRightOf="@id/meal1_circle"-->
+                <!--                                android:text="Before Meal"-->
+                <!--                                android:textSize="14sp"-->
+                <!--                                android:fontFamily="@font/humanst521_bt"/>-->
+
+                <!--                        </RelativeLayout>-->
+
+
+                <!--                    </RelativeLayout>-->
+
+                <!--                    <RelativeLayout-->
+                <!--                        android:id="@+id/meal2"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="3dp"-->
+                <!--                        android:layout_marginRight="3dp"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:background="@drawable/analysis_lay_bg"-->
+                <!--                        android:padding="5dp">-->
+
+                <!--                        <ImageView-->
+                <!--                            android:id="@+id/meal2_img"-->
+                <!--                            android:layout_width="20dp"-->
+                <!--                            android:layout_height="20dp"-->
+                <!--                            android:layout_centerHorizontal="true"-->
+                <!--                            android:layout_marginTop="5dp"-->
+                <!--                            android:src="@drawable/meal_2" />-->
+
+                <!--                        <RelativeLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_below="@id/meal2_img"-->
+                <!--                            android:layout_centerHorizontal="true">-->
+
+                <!--                            <ImageView-->
+                <!--                                android:id="@+id/meal2_circle"-->
+                <!--                                android:layout_width="10dp"-->
+                <!--                                android:layout_height="10dp"-->
+                <!--                                android:layout_marginLeft="10dp"-->
+                <!--                                android:layout_marginTop="12dp"-->
+                <!--                                android:src="@drawable/circle"-->
+                <!--                                />-->
+
+                <!--                            <TextView-->
+                <!--                                android:layout_width="wrap_content"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_marginLeft="5dp"-->
+                <!--                                android:layout_marginTop="8dp"-->
+                <!--                                android:layout_toRightOf="@id/meal2_circle"-->
+                <!--                                android:text="After Meal"-->
+                <!--                                android:textSize="14sp"-->
+                <!--                                android:fontFamily="@font/humanst521_bt"/>-->
+
+                <!--                        </RelativeLayout>-->
+
+                <!--                    </RelativeLayout>-->
+
+                <!--                    <RelativeLayout-->
+                <!--                        android:id="@+id/meal3"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="3dp"-->
+                <!--                        android:layout_marginRight="3dp"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:background="@drawable/analysis_lay_bg"-->
+                <!--                        android:padding="5dp">-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/meal3_tv"-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="20dp"-->
+                <!--                            android:layout_marginTop="5dp"-->
+                <!--                            android:gravity="center_horizontal"-->
+                <!--                            android:text="GEN"-->
+                <!--                            android:textSize="18sp"-->
+                <!--                            android:fontFamily="@font/humanst521_bt"/>-->
+
+                <!--                        <RelativeLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_below="@id/meal3_tv"-->
+                <!--                            android:layout_centerHorizontal="true">-->
+
+                <!--                            <ImageView-->
+                <!--                                android:id="@+id/meal3_circle"-->
+                <!--                                android:layout_width="10dp"-->
+                <!--                                android:layout_height="10dp"-->
+                <!--                                android:layout_marginLeft="10dp"-->
+                <!--                                android:layout_marginTop="12dp"-->
+                <!--                                android:src="@drawable/blue_circle" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:layout_width="wrap_content"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_marginLeft="5dp"-->
+                <!--                                android:layout_marginTop="8dp"-->
+                <!--                                android:layout_toRightOf="@id/meal3_circle"-->
+                <!--                                android:text="After Meal"-->
+                <!--                                android:textSize="14sp"-->
+                <!--                                android:fontFamily="@font/humanst521_bt"/>-->
+
+                <!--                        </RelativeLayout>-->
+
+                <!--                    </RelativeLayout>-->
+
+
+                <!--                </LinearLayout>-->
+
+
+                <RelativeLayout
+                    android:id="@+id/days_lay"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/bef_aft_gen"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/weight_days_bg">
+
+                    <TextView
+                        android:id="@+id/analysis_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="7 Days"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_regular" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/analysis_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/days_lay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="09 July 2019- 16 July 2019"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular" />
+
+                <RelativeLayout
+                    android:id="@+id/analysis_center_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/analysis_date">
+
+                    <LinearLayout
+                        android:id="@+id/analysis_center_lay1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/space20"
+                        android:weightSum="4">
+                        <LinearLayout
+                            android:layout_marginLeft="20dp"
+
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="BG Value"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="@dimen/space12"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/poppins_regular" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="194"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/text16"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="mg/dl"
+                                android:textSize="@dimen/text14"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/space20"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="Insulin"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="@dimen/text14"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/poppins_regular" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="- -"
+                                android:textColor="@color/green"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/space20"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="Exercise"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="@dimen/text14"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/poppins_regular" />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="- -"
+                                android:textColor="@color/green"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/space20"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Carb"
+                                android:textColor="@color/darkgrey"
+                                android:textSize="@dimen/text14"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/poppins_regular " />
+
+                            <TextView
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="- -"
+                                android:textColor="@color/green"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/analysis_graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_below="@id/analysis_center_lay"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/space10"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/vector" />
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/space10"
+                    android:layout_margin="@dimen/space10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/analysis_graph"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="09/07"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_regular" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Insulin"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text10"
+                            android:fontFamily="@font/poppins_regular" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Excercise"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space10" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Carb"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/space10" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="10/07"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_regular" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/red_circle" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/green_circle" />
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/blue_circle" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="11/07"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_regular" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/red_circle" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/green_circle" />
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/blue_circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="12/07"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_regular" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/red_circle" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/green_circle" />
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/blue_circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="13/07"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_regular" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1" />
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/blue_circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="14/07"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_regular" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="15/07"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_regular" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space14"
+                            android:layout_height="@dimen/space14"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

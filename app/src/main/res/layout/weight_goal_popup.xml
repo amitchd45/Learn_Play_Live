@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/space15">
+
+    <TextView
+        android:layout_marginTop="@dimen/space10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text14"
+        android:textColor="@color/black"
+        android:text="Weight Goals"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/space10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text14"
+        android:textColor="@color/orange"
+        android:text="Weight"/>
+
+    <LinearLayout
+        android:id="@+id/weightLl"
+        android:padding="@dimen/space10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text14"
+        android:textColor="@color/black"
+        android:text="Weight"/>
+        <TextView
+            android:id="@+id/goalWeightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text10"
+            android:text="Set a Goal"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/space10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text14"
+        android:textColor="@color/orange"
+        android:text="Body Fat"/>
+
+    <LinearLayout
+        android:id="@+id/bodyFatLl"
+        android:padding="@dimen/space10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:textColor="@color/black"
+            android:text="Body Fat"/>
+        <TextView
+            android:id="@+id/selectedPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text10"
+            android:text="Set a Goal"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

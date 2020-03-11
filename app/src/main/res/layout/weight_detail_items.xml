@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:id="@+id/waterMlItem">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+
+    <TextView
+        android:id="@+id/weekDay"
+        android:layout_below="@id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tue"
+        android:textColor="@color/grey"
+        android:textSize="10sp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@id/weekDay"
+        android:fontFamily="@font/poppins_regular"
+        android:text="68 kg"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space20">
+
+        <TextView
+
+            android:layout_below="@id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="--"
+            android:textColor="@color/grey"
+            android:textSize="10sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@id/weekDay"
+            android:fontFamily="@font/poppins_regular"
+            android:text="% Fat"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

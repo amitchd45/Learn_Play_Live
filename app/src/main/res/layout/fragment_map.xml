@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.Fitness.FitnessFragments.MapFragment">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ma_frag"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <ImageView
+        android:visibility="gone"
+        android:padding="@dimen/space5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock_privacy"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        android:id="@+id/unlock_btn"
+
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/space10"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        android:id="@+id/lock_btn"
+
+        />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/timer_background_gradient"
+    tools:context=".HomeBottom.Fitness.FitnessActivity.TimerExerciseActivity">
+
+    <include layout="@layout/topbar2"
+        android:id="@+id/top_timer"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_timer">
+
+<!--        <ImageView-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_lock_privacy"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="@dimen/space20"-->
+<!--            android:layout_marginRight="@dimen/space20"-->
+<!--            android:id="@+id/unlock_btn"-->
+<!--            android:elevation="@dimen/space10"-->
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_lock"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="@dimen/space20"-->
+<!--            android:layout_marginRight="@dimen/space20"-->
+<!--            android:id="@+id/lock_btn"-->
+<!--            android:elevation="@dimen/space10"-->
+<!--            />-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/timerViewPager"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+
+    </RelativeLayout>
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/timeCcircleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space8"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/space10"
+        android:layout_above="@+id/transitionsContainer"
+        />
+
+    <LinearLayout
+        android:id="@+id/transitionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space50"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+            <RelativeLayout
+                android:visibility="visible"
+                android:id="@+id/timer_btn"
+                android:layout_width="@dimen/space120"
+                android:layout_height="@dimen/space120"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/bluestroke10dp">
+                <RelativeLayout
+                    android:layout_width="@dimen/space100"
+                    android:layout_height="@dimen/space100"
+                    android:background="@drawable/button_circle"
+                    android:layout_centerInParent="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/palyPauseIv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pause"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:id="@+id/playPauseTv"
+                            android:layout_width="@dimen/space70"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="@dimen/text14"
+                            android:textColor="@color/black"
+                            android:text="PAUSE"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="@dimen/text14"
+                            android:textColor="@color/black"
+                            android:text="RESUME"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/timer_finish_btn"
+                android:layout_width="@dimen/space100"
+                android:layout_height="@dimen/space100"
+                android:layout_marginLeft="@dimen/space40"
+                android:background="@drawable/circle_inner">
+                <RelativeLayout
+                    android:layout_width="@dimen/space85"
+                    android:layout_height="@dimen/space85"
+                    android:background="@drawable/timer_finish_circle"
+                    android:layout_centerInParent="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="@dimen/text12"
+                            android:textColor="@color/black"
+                            android:text="HOLD TO FINISH"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+<!--        <com.skydoves.elasticviews.ElasticButton-->
+<!--            android:id="@+id/timer_finish_btn"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="HOLD TO FINISH"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="17sp"-->
+<!--            app:button_duration="250"-->
+<!--            app:button_scale="0.87" />-->
+    </LinearLayout>
+
+
+</RelativeLayout>

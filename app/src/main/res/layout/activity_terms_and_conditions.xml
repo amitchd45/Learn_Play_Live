@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsAndConditionsActivity">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/acceptSkipTermsCondition"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        android:layout_marginTop="@dimen/space20"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/space20"
+            android:textSize="@dimen/text14"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/space20"
+            android:textSize="@dimen/text14"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/space20"
+            android:textSize="@dimen/text14"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/acceptSkipTermsCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space55"
+        android:text="ACCEPT"
+        android:textColor="@color/white"
+        android:background="@drawable/background_button"
+        android:layout_marginTop="@dimen/space20"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text18"
+        android:padding="@dimen/space10"
+        android:id="@+id/btn_accept_tnc"/>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space55"
+        android:text="SKIP"
+        android:textColor="@color/black"
+        android:background="@drawable/corners_green"
+        android:layout_marginTop="@dimen/space30"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text18"
+        android:padding="@dimen/space10"
+        android:id="@+id/btn_skip_tnc"
+        android:layout_marginBottom="@dimen/space20"/>
+    </LinearLayout>
+</RelativeLayout>

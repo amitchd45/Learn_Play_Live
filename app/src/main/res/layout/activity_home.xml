@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infideap.drawerbehavior.AdvanceDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:id="@+id/advanceDrawerLayout"
+    tools:context=".Actiivties.HomeActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_menu"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/space5"
+            android:elevation="@dimen/space1"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/fram">
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fram"
+            android:layout_alignParentBottom="true"
+            android:background="#F1F1F1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/bottomFirst"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_home_grey" />
+
+                <ImageView
+                    android:id="@+id/bottomSecond"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_calendar_grey" />
+
+                <ImageView
+                    android:id="@+id/bottomThird"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_heartbeat_grey"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/bottomFourth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/sources_grey" />
+
+                <ImageView
+                    android:id="@+id/bottomFifth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_patient_grey" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/images"
+            android:layout_above="@id/fram"
+            android:layout_marginBottom="-50dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/topFirst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_home_green"
+                android:padding="25dp"
+                android:background="@drawable/background_round"/>
+
+            <ImageView
+                android:id="@+id/topSecond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:padding="25dp"
+                android:src="@drawable/ic_calendar_green"
+                android:layout_margin="2dp"
+                android:background="@drawable/background_round"/>
+
+            <ImageView
+                android:id="@+id/topThird"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:padding="25dp"
+                android:visibility="invisible"
+                android:src="@drawable/ic_heartbeat_green"
+                android:background="@drawable/background_round"/>
+
+            <ImageView
+                android:id="@+id/topFourth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:layout_margin="2dp"
+                android:padding="25dp"
+                android:src="@drawable/sources_grey"
+                android:background="@drawable/background_round"/>
+
+            <ImageView
+                android:id="@+id/topFifth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_patient_green"
+                android:padding="25dp"
+                android:background="@drawable/background_round"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <include layout="@layout/navigation_drawer_layout"/>
+
+</com.infideap.drawerbehavior.AdvanceDrawerLayout>

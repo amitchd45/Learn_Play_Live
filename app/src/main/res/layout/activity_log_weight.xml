@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Actiivties.LogWeightActivity">
+
+    <include layout="@layout/topbar"/>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="10dp"-->
+<!--            android:src="@drawable/ic_back_black" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:fontFamily="@font/poppins"-->
+<!--            android:text="Log Weight"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:fontFamily="@font/poppins"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Save"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:textColor="@color/orange"-->
+<!--            android:textSize="12sp" />-->
+
+<!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/space20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins"
+            android:text="Date"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text14" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#d3d3d3"
+            android:fontFamily="@font/poppins"
+            android:text="Today"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Weight"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text14" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/weightEditText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#d3d3d3"
+                android:fontFamily="@font/poppins"
+                android:text="68"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/weightEditText"
+                android:fontFamily="@font/poppins"
+                android:text="kg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text14" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="% Body Fat"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text14" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#d3d3d3"
+            android:fontFamily="@font/poppins"
+            android:text="25"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text14" />
+
+    </LinearLayout>
+
+</LinearLayout>

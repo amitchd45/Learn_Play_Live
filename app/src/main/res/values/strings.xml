@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Learn Play Live</string>
+    <string name="tv_verify">A verificationn code has been sent to the Email address info@omninos.com.Please enter the code below</string>
+    <string name="terms_conditions">HIPAA (Health Insurance Portability and Accountability Act of 1990) is United States legislation that provides data privacy and security provisions for safeguarding medical Information.</string>
+    <string name="medication_information">Medication Information</string>
+    <string name="select_dosage">Select Dosage</string>
+    <string name="reminders">Reminder(s)</string>
+    <string name="time_and_days_of_the_week">Time and Days of the Week</string>
+    <string name="additional_option">Additional Options</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_key">AIzaSyC1IoQ9g1lQAkzdpvtnwUGB12tgXPmNOsI</string>
+    <string name="exercise_bold_text">Tally up your weekly workouts. We\'ll automatically recognize and track your workouts.</string>
+    <string name="weight_bold_string">Get your goal weight. Log it often to seeprogress over time</string>
+
+    <string name="keep_an_eye_">Keep an eye on your water intake. Make the connection between hydration and how good you feel.</string>
+
+    //hydration
+    <string name="log_how_much_">Log how much water you drink on a daily basis.</string>
+    <string name="set_a_personal_">Set a personal hydration goal.</string>
+    <string name="see_your_weekly_">See your weekly and monthly average water intake.</string>
+    <string name="how_much_did_">How much did you drink?</string>
+    <string name="water_is_essential_">Water is essential to good health and helps to prevent dehydration. While water needs vary from person to person, we often need at-least 64 oz of water a day.</string>
+    <string name="track_your_exercise">Track your Exercise</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="_5_days_left_this_week">5 days left this week</string>
+    <string name="nutrition_body"><![CDATA[Nutrition & Body]]></string>
+    <string name="privacy_security"><![CDATA[Privacy & Security]]></string>
+    <string name="security_login"><![CDATA[Security & Login]]></string>
+    <string name="which_device_are">Which Device Are You Setting Up?</string>
+    <string name="heres_the_last7_days">Here\'s the last 7 days worth of progress</string>
+    <string name="goals_are_meant_to_be">Goals are meant to be fleible. Tap to view or personalize any goal.</string>
+    <string name="goal_10000_step_per_day">Goal: 10,000 steps per day</string>
+    <string name="steps_average">step average</string>
+    <string name="goal_weight_110_lbs">Goal: Weight 110 lbs</string>
+    <string name="we_dont_have_have_any_step_data_from_you">We don\'t have any step data fro you</string>
+    <string name="make_sure_to_wear_your_tracker">Make sure to wear yourtracker regularly and sync it with Learn Play Live app. </string>
+    <string name="you_are_on_top_of_it">You\'re on top of it!</string>
+    <string name="your_last_weight_in_at">Your last weight in at110 lbs -great job checking in Keep it up! You\'re on the right track. Weight in atleast once a week to check on your progress.</string>
+    <string name="lets_set_up_weight_goal">Let\'s set up your Weight goal!</string>
+    <string name="adjust_your_goal_weight_to">Adjust your goal weight to what feels right for you. You can change this it any time. Meanwhile weight in at least once a week to check on your progress.</string>
+    <string name="your_food_logs_a_little_hungry">Your food log\'s a little hungry.</string>
+    <string name="looks_like_you_werent_able_to_log_food">Looks like you weren\'t able to log food last week, but you\'ll get there! Being aware of what you\'re eating can truly change habits, so stick with it.</string>
+    <string name="food_logged">Food Logged</string>
+    <string name="you_didnt_quite_reach_your_goal">You didn\'t quite reach your goal, but there\'s always next week! Do you want to keep your water goal at1,893 ml each day this week or change it?</string>
+    <string name="switch_it_up">Switch it up.</string>
+    <string name="last_week_you_drank_an_average">Last week you drank an average of 16,424 ml of water each day. What should we aim for now?</string>
+    <string name="deleting_your_account_will">Deleting your account will remove your data and profile from Learn lay Live.</string>
+    <string name="facebook_app_id">2451066021807294</string>
+    <string name="fb_login_protocol_scheme">fb2451066021807294</string>
+
+    <string-array name="ml_entries">
+
+
+        <item>ml</item>
+        <item>ml</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drawer.StepsSevenDayActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/top_steps"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:layout_below="@+id/top_steps">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/track_large"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/space10"
+            android:text="@string/we_dont_have_have_any_step_data_from_you"/>
+
+        <TextView
+            android:layout_marginRight="@dimen/space25"
+            android:layout_marginLeft="@dimen/space25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text10"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/space10"
+            android:text="@string/make_sure_to_wear_your_tracker"
+            android:gravity="center"/>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space30"
+            android:weightSum="7"
+            >
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="1">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_circle"/>
+               <TextView
+                   android:layout_marginTop="@dimen/space5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/poppins_regular"
+                   android:textSize="@dimen/space14"
+                   android:text="F"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   />
+
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_circle"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/space14"
+                    android:text="S"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_circle"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/space14"
+                    android:text="S"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_circle"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/space14"
+                    android:text="M"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_circle"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/space14"
+                    android:text="T"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_circle"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/space14"
+                    android:text="W"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_circle"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/space14"
+                    android:text="T"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space55"
+            android:background="@drawable/grey_outline"
+            android:layout_marginTop="@dimen/space80"
+            android:text="Good to Know"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text14"
+            android:fontFamily="@font/poppins_regular"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

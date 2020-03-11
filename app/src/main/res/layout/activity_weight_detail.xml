@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.Weight.Activity.WeightDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space250"
+            android:background="@drawable/gradient_green"
+            android:id="@+id/exercise_top_lay">
+
+            <include layout="@layout/topbar2"
+                android:id="@+id/top_fitness"
+                />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_fitness"
+                android:id="@+id/weightfragmentViewPager">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/weightcircleindicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space8"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/space10"
+                android:layout_below="@id/weightfragmentViewPager"
+                android:layout_marginTop="-30dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/exercise_top_lay"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/space20"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/space30"
+                android:layout_height="@dimen/space30"
+                android:id="@+id/color_weight_img"
+                android:layout_marginLeft="@dimen/space15"
+                android:src="@drawable/weight"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/color_weight_img"
+                android:layout_marginLeft="@dimen/space10"
+                android:text="Weight Summary"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:id="@+id/tv_exercise"
+                android:layout_marginRight="@dimen/space15"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/space50">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/color_weight_img"
+                android:layout_marginLeft="@dimen/space10"
+                android:text="68kg"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:id="@+id/tv_weight"
+                android:layout_below="@id/tv_exercise"
+                android:layout_marginTop="@dimen/space20"
+
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/space30"
+                android:background="@color/verylightgrey"
+                android:layout_toRightOf="@id/tv_weight"
+                android:layout_marginLeft="@dimen/space25"
+                android:layout_below="@id/tv_exercise"
+                android:layout_marginTop="@dimen/space15"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space25"
+                android:text="Set a weight goal to help you stay on track!"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text12"
+                android:layout_marginTop="@dimen/space20"
+
+                />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/verylightgrey"
+                android:layout_marginTop="@dimen/space10"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/space15"
+                >
+
+                <TextView
+                    android:id="@+id/logWeightRedTv"
+                    android:padding="@dimen/space10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/text14"
+                    android:textColor="@color/red"
+                    android:text="Log Weight"/>
+                <TextView
+                    android:id="@+id/setGoalTv"
+                    android:padding="@dimen/space10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/text14"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/space40"
+                    android:text="Set a Goal"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/verylightgrey"
+               />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space30"
+                android:background="@drawable/gradient_green"
+                android:layout_marginTop="@dimen/space15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/text12"
+                    android:textColor="@color/white"
+                    android:text="This Week"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space15"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/text12"
+                    android:textColor="@color/white"
+                    android:text="68 kg avg"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space15"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/weightDetailRecyclerView"/>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

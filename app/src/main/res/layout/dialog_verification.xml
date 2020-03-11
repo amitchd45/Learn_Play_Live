@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="10dp"
+    android:paddingBottom="5dp"
+    android:layout_marginLeft="@dimen/space20"
+    android:layout_marginRight="@dimen/space20"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/space20"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/space120"
+            android:layout_height="@dimen/space120"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congratulations!"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text22"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space10"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your profile is \nsuccessfully verified."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text14"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/space20"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <Button
+            android:layout_width="@dimen/space250"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="@dimen/text16"
+            android:textColor="@color/white"
+            android:background="@drawable/background_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space30"
+            android:id="@+id/btn_done_dialog"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginBottom="@dimen/space20"
+
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

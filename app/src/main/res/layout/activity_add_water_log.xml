@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeBottom.Hydration.AddWaterLogActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/bar"/>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_back_black"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:padding="10dp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Add Water Log"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_centerInParent="true"/>-->
+
+<!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_below="@id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/howMuchTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/how_much_did_"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_toLeftOf="@id/mlSpinner"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:background="@null"/>
+
+            <Spinner
+                android:id="@+id/mlSpinner"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:entries="@array/ml_entries">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/green"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/howMuchTv">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Quick add"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/glassTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_water_glass"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="1 glass"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/bottleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_full_bottle"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="1 glass"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/bottleTv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_bottle"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="1 glass"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/grey">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Date"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/datePickerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Aug 21, 2019"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey">
+
+        </View>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/poppins_regular"
+        android:text="SAVE"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

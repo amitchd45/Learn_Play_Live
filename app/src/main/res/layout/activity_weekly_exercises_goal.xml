@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeBottom.Fitness.FitnessActivity.WeeklyExercisesGoalActivity">
+
+    <include layout="@layout/topbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/space14"
+        android:padding="@dimen/space10"
+        android:text="Weekly Exerise Goals"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/space15"
+           android:layout_marginRight="@dimen/space15"
+           android:orientation="vertical">
+
+
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/weekly_exercise_goal_run_img"
+                   android:padding="@dimen/space5"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="01 Day"
+                   android:layout_marginLeft="@dimen/space20"
+                   android:textSize="@dimen/text16"
+                   android:textStyle="bold"
+                   android:fontFamily="@font/poppins_regular"
+                   android:textColor="@color/black"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:padding="@dimen/space5"/>
+
+           </LinearLayout>
+           <CheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="@dimen/space15"
+               android:buttonTint="@color/orange"
+               android:padding="@dimen/space5"/>
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/weekly_exercise_goal_run_img"
+                       android:padding="@dimen/space5"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="02 Days"
+                       android:layout_marginLeft="@dimen/space20"
+                       android:textSize="@dimen/text16"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/poppins_regular"
+                       android:textColor="@color/black"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:padding="@dimen/space5"/>
+
+               </LinearLayout>
+               <CheckBox
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="@dimen/space15"
+                   android:buttonTint="@color/orange"
+                   android:padding="@dimen/space5"/>
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/weekly_exercise_goal_run_img"
+                       android:padding="@dimen/space5"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="03 Days"
+                       android:layout_marginLeft="@dimen/space20"
+                       android:textSize="@dimen/text16"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/poppins_regular"
+                       android:textColor="@color/black"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:padding="@dimen/space5"/>
+
+               </LinearLayout>
+               <CheckBox
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="@dimen/space15"
+                   android:buttonTint="@color/orange"
+                   android:padding="@dimen/space5"/>
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/weekly_exercise_goal_run_img"
+                       android:padding="@dimen/space5"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="04 Days"
+                       android:layout_marginLeft="@dimen/space20"
+                       android:textSize="@dimen/text16"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/poppins_regular"
+                       android:textColor="@color/black"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:padding="@dimen/space5"/>
+
+               </LinearLayout>
+               <CheckBox
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginRight="@dimen/space15"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:buttonTint="@color/orange"
+                   android:padding="@dimen/space5"/>
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/weekly_exercise_goal_run_img"
+                       android:padding="@dimen/space5"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="05 Days"
+                       android:layout_marginLeft="@dimen/space20"
+                       android:textSize="@dimen/text16"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/poppins_regular"
+                       android:textColor="@color/black"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:padding="@dimen/space5"/>
+
+               </LinearLayout>
+               <CheckBox
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="@dimen/space15"
+                   android:buttonTint="@color/orange"
+                   android:padding="@dimen/space5"/>
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/weekly_exercise_goal_run_img"
+                       android:padding="@dimen/space5"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="06 Days"
+                       android:layout_marginLeft="@dimen/space20"
+                       android:textSize="@dimen/text16"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/poppins_regular"
+                       android:textColor="@color/black"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:padding="@dimen/space5"/>
+
+               </LinearLayout>
+               <CheckBox
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="@dimen/space15"
+                   android:buttonTint="@color/orange"
+                   android:padding="@dimen/space5"/>
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/weekly_exercise_goal_run_img"
+                       android:padding="@dimen/space5"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="07 Days"
+                       android:layout_marginLeft="@dimen/space20"
+                       android:textSize="@dimen/text16"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/poppins_regular"
+                       android:textColor="@color/black"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:padding="@dimen/space5"/>
+
+               </LinearLayout>
+               <CheckBox
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:padding="@dimen/space5"
+                   android:buttonTint="@color/orange"
+                   android:layout_marginRight="@dimen/space15"/>
+
+           </RelativeLayout>
+
+
+
+
+       </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

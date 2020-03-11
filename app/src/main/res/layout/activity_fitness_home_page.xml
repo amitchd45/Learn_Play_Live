@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.Fitness.FitnessActivity.FitnessHomePageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space200"
+        android:background="@drawable/fitness_top_bg"
+        android:id="@+id/fitness_top_lay"/>
+
+    <include layout="@layout/topbar2"
+        android:id="@+id/top_fitness"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fitness_top_lay"
+        android:layout_marginTop="@dimen/space10"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:layout_marginBottom="@dimen/space20">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fitness_item_recycleview"
+
+            />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="2"-->
+<!--            android:id="@+id/fitness_ll_1">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="@dimen/space15"-->
+<!--            android:elevation="@dimen/space10"-->
+<!--            android:layout_marginRight="@dimen/space5"-->
+<!--            android:layout_marginLeft="@dimen/space5"-->
+<!--            android:id="@+id/card"-->
+<!--            android:layout_weight="1">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="-23dp"-->
+<!--                        android:src="@drawable/fitness_sleep_bg"-->
+<!--                        android:id="@+id/fitness_bg_img"/>-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:src="@drawable/fitness_sleep"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:id="@+id/fitness_img"-->
+<!--                        />-->
+<!--                </RelativeLayout>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Sleep"-->
+
+<!--                    android:textSize="@dimen/text18"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_marginLeft="@dimen/space5"-->
+<!--                    android:fontFamily="@font/poppins_regular"-->
+<!--                    android:id="@+id/fitness_heading"-->
+
+
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Plus sleep stages"-->
+<!--                    android:layout_marginTop="@dimen/space5"-->
+<!--                    android:layout_marginBottom="@dimen/space10"-->
+<!--                    android:textSize="@dimen/text14"-->
+<!--                    android:layout_marginLeft="@dimen/space5"-->
+<!--                    android:fontFamily="@font/poppins_regular"-->
+<!--                    android:id="@+id/fitness_description"-->
+
+
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:cardCornerRadius="@dimen/space15"-->
+<!--                android:elevation="@dimen/space10"-->
+<!--                android:layout_marginRight="@dimen/space5"-->
+<!--                android:layout_marginLeft="@dimen/space5"-->
+<!--                android:id="@+id/Exercise_card"-->
+<!--                android:layout_weight="1">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="-23dp"-->
+<!--                            android:src="@drawable/fitness_exercise_bg"-->
+<!--                            android:id="@+id/fitness_bg_img2"/>-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/fitness_exercise"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:id="@+id/fitness_img2"-->
+<!--                            />-->
+<!--                    </RelativeLayout>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Exercise"-->
+<!--                        android:textSize="@dimen/text18"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_marginLeft="@dimen/space5"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:id="@+id/fitness_heading2"-->
+
+
+<!--                        />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Plus sleep stages"-->
+<!--                        android:layout_marginTop="@dimen/space5"-->
+<!--                        android:layout_marginBottom="@dimen/space10"-->
+<!--                        android:textSize="@dimen/text14"-->
+<!--                        android:layout_marginLeft="@dimen/space5"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:id="@+id/fitness_description2"-->
+
+
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="2"-->
+<!--            android:id="@+id/fitness_ll_2"-->
+<!--            android:layout_marginTop="@dimen/space10">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:cardCornerRadius="@dimen/space15"-->
+<!--                android:elevation="@dimen/space10"-->
+<!--                android:layout_marginRight="@dimen/space5"-->
+<!--                android:layout_marginLeft="@dimen/space5"-->
+<!--                android:id="@+id/card3"-->
+<!--                android:layout_weight="1">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="-23dp"-->
+<!--                            android:src="@drawable/fitness_heart_rate_bg"-->
+<!--                            android:id="@+id/fitness_bg_img3"/>-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/fitness_heart_rate"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:id="@+id/fitness_img3"-->
+<!--                            />-->
+<!--                    </RelativeLayout>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Heart Rate"-->
+
+<!--                        android:textSize="@dimen/text18"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_marginLeft="@dimen/space5"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:id="@+id/fitness_heading3"-->
+
+
+<!--                        />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Plus sleep stages"-->
+<!--                        android:layout_marginTop="@dimen/space5"-->
+<!--                        android:layout_marginBottom="@dimen/space10"-->
+<!--                        android:textSize="@dimen/text14"-->
+<!--                        android:layout_marginLeft="@dimen/space5"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:id="@+id/fitness_description3"-->
+
+
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:cardCornerRadius="@dimen/space15"-->
+<!--                android:elevation="@dimen/space10"-->
+<!--                android:layout_marginRight="@dimen/space5"-->
+<!--                android:layout_marginLeft="@dimen/space5"-->
+<!--                android:id="@+id/card4"-->
+<!--                android:layout_weight="1">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="-23dp"-->
+<!--                            android:src="@drawable/fitness_weight_bg"-->
+<!--                            android:id="@+id/fitness_bg_img4"/>-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/fitness_weight"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:id="@+id/fitness_img4"-->
+<!--                            />-->
+<!--                    </RelativeLayout>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Weight"-->
+<!--                        android:textSize="@dimen/text18"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_marginLeft="@dimen/space5"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:id="@+id/fitness_heading4"-->
+
+
+<!--                        />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Plus sleep stages"-->
+<!--                        android:layout_marginTop="@dimen/space5"-->
+<!--                        android:layout_marginBottom="@dimen/space10"-->
+<!--                        android:textSize="@dimen/text14"-->
+<!--                        android:layout_marginLeft="@dimen/space5"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:id="@+id/fitness_description4"-->
+
+
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--        </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

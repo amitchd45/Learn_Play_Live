@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Drawer.SecurityAndLoginActivity">
+
+    <include layout="@layout/topbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_marginRight="@dimen/space20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/green"
+                android:text="Security"/>
+
+            <LinearLayout
+                android:padding="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:text="Manage Account Access"
+                android:layout_marginTop="@dimen/space10"/>
+            <TextView
+                android:layout_marginTop="@dimen/space5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text12"
+                android:text="Check the Devices that are logged into your Learn Play Live account."/>
+            <TextView
+                android:layout_marginTop="@dimen/space5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text12"
+                android:text="You can revoke there access here."/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/space10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space1"
+            android:background="@color/muchgrey"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/space10"
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_marginRight="@dimen/space20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/green"
+                android:text="Login"/>
+
+            <LinearLayout
+                android:padding="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/changeEmailLl">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/text14"
+                    android:textColor="@color/black"
+                    android:text="Change Email"
+                    android:layout_marginTop="@dimen/space10"/>
+                <TextView
+                    android:layout_marginTop="@dimen/space2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/text12"
+                    android:text="info@omninos.com"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/changePasswordTv"
+                android:padding="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:text="Change Password"
+                android:layout_marginTop="@dimen/space10"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

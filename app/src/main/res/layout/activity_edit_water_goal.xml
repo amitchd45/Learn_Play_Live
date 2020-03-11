@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drawer.EditWaterGoalActivity">
+
+    <include layout="@layout/topbar"
+        android:id="@+id/top_weight"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_weight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/water_large"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/space10"
+                android:text="@string/switch_it_up"/>
+
+            <TextView
+                android:layout_marginRight="@dimen/space25"
+                android:layout_marginLeft="@dimen/space25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text10"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/space10"
+                android:text="@string/last_week_you_drank_an_average"
+                android:gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/space10"
+                android:layout_marginTop="@dimen/space20">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sub"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/space15"
+                    android:text="1893 ml"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/space25"
+                    android:layout_marginRight="@dimen/space25"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add"/>
+            </LinearLayout>
+
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space55"
+                android:text="Make this my goal"
+                android:textColor="@color/white"
+                android:background="@drawable/background_button"
+                android:layout_marginTop="@dimen/space60"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:padding="@dimen/space10"
+                android:id="@+id/btn_makeThisMyGoal"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

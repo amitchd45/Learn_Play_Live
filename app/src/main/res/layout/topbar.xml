@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space8"
+    android:padding="@dimen/space5">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_keyboard_backspace_black_24dp"
+        android:id="@+id/back_topbar"
+        android:padding="@dimen/space5"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/close"
+        android:id="@+id/close_topbar"
+        android:visibility="gone"
+        android:padding="@dimen/space5"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text14"
+        android:textColor="@color/black"
+        android:id="@+id/tv_header"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/done"
+        android:id="@+id/done_topbar"
+        android:visibility="gone"
+        android:padding="@dimen/space5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/editText_topbar"
+        android:visibility="gone"
+        android:text="Edit"
+        android:textColor="@color/orange"
+        android:padding="@dimen/space5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/saveText_topbar"
+        android:visibility="gone"
+        android:text="Save"
+        android:textColor="@color/orange"
+        android:padding="@dimen/space5"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/edit"
+        android:id="@+id/edit_topbar"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/space35"
+        android:padding="@dimen/space5"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/edit"
+        android:id="@+id/editProfile_topbar"
+        android:visibility="gone"
+        android:padding="@dimen/space5"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/delete"
+        android:id="@+id/delete_topbar"
+        android:visibility="gone"
+        android:padding="@dimen/space5"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/stat"
+        android:id="@+id/stat_topbar"
+        android:visibility="gone"
+        android:padding="@dimen/space5"/>
+
+
+</RelativeLayout>

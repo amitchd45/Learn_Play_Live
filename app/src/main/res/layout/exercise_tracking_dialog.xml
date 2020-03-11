@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/space20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space20">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="@dimen/space30"
+            android:layout_height="@dimen/space30"
+            android:buttonTint="@color/orange"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/space20"/>
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/space15"
+            android:layout_height="@dimen/space15"
+            android:layout_gravity="end"
+            android:src="@drawable/audio"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="@dimen/space30"
+                android:layout_height="@dimen/space30"
+                android:buttonTint="@color/orange"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/space20"/>
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/space15"
+            android:layout_height="@dimen/space15"
+            android:layout_gravity="end"
+            android:src="@drawable/audio"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="@dimen/space30"
+                android:layout_height="@dimen/space30"
+                android:buttonTint="@color/orange"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Pace"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/space20"/>
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/space15"
+            android:layout_height="@dimen/space15"
+            android:layout_gravity="end"
+            android:src="@drawable/audio"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="@dimen/space30"
+                android:layout_height="@dimen/space30"
+                android:buttonTint="@color/orange"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Pace"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/space20"/>
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/space15"
+            android:layout_height="@dimen/space15"
+            android:layout_gravity="end"
+            android:src="@drawable/audio"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space10"
+        android:layout_marginBottom="@dimen/space10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="@dimen/space30"
+                android:layout_height="@dimen/space30"
+                android:buttonTint="@color/orange"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories Burned"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/space20"/>
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/space15"
+            android:layout_height="@dimen/space15"
+            android:layout_gravity="end"
+            android:src="@drawable/audio"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

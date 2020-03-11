@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.Medications.MedicationsActivity.MedicationsActivity">
+
+
+    <include  layout="@layout/topbar"
+        android:id="@+id/topbar_medications"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar_medications">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space10"
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/space20"
+       >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_plus_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Medications"
+            android:textColor="@color/green"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space20"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/space20">
+
+        <TextView
+            android:layout_width="@dimen/space0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Medicines \nReminder"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text16"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/space0"
+            android:layout_height="wrap_content"
+            android:src="@drawable/medicines_medi"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<com.vivekkaushik.datepicker.DatePickerTimeline
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space20"
+
+    />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday,Apr 4, 2019"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text14"
+            android:layout_marginTop="@dimen/space25"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_medicationspageactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space20"
+            tools:listitem="@layout/layout_recycler_medicationsactivity" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:layout_marginBottom="@dimen/space30"
+        android:layout_marginRight="@dimen/space20">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BtnAddReminder">
+
+        <ImageView
+            android:layout_width="@dimen/space35"
+            android:layout_height="@dimen/space35"
+            android:background="@drawable/add_reminder"
+           />
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_add_sign" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

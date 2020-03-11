@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Drawer.ChangeEmailActivity">
+
+    <include layout="@layout/topbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space20"
+        android:layout_marginLeft="@dimen/space20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:text="Current Email"/>
+        <EditText
+            android:id="@+id/currentEmail_Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/space5"
+            android:hint="info@omninos.com"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/space15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:textColor="@color/orange"
+            android:text="New Email"/>
+        <EditText
+            android:id="@+id/newEmail_Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/space5"
+            android:hint="info@omninos.com"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/space15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:textColor="@color/black"
+            android:text="Confirm New Email"/>
+        <EditText
+            android:id="@+id/confirmNewEmail_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/space5"
+            android:hint="info@omninos.com"/>
+
+<!--        <TextView-->
+<!--            android:layout_marginTop="@dimen/space15"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:textSize="@dimen/text14"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Your Password"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/passwordCahngeEmail_Et"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:textSize="@dimen/text14"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_marginTop="@dimen/space5"-->
+<!--            android:hint="******"/>-->
+
+
+        <TextView
+            android:layout_marginTop="@dimen/space50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text10"
+            android:gravity="center"
+            android:text="We will send you an Email to verify your new email address."/>
+        <Button
+            android:layout_marginTop="@dimen/space10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space55"
+            android:text="Change"
+            android:textColor="@color/white"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:padding="@dimen/space10"
+            android:id="@+id/changeEmailBtn"
+            android:layout_marginBottom="@dimen/space30"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

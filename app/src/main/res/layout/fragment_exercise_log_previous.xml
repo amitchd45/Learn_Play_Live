@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.Fitness.FitnessFragments.ExerciseLogPreviousFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space15"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginTop="@dimen/space7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text16"
+            android:padding="@dimen/space7"
+            android:text="Exercise Type"
+            />
+        <EditText
+            android:id="@+id/exerciseType_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space7"
+            android:textSize="@dimen/text14"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/ed_drawalbe"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/places_ic_search"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/space10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text16"
+            android:padding="@dimen/space7"
+            android:text="Start Date"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           android:id="@+id/pickDateLl"
+            >
+
+            <EditText
+                android:id="@+id/pickDateEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space7"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="@dimen/space10"
+                android:textSize="@dimen/text14"
+                android:focusable="false"
+                android:background="@android:color/transparent"
+                android:hint="13 Aug 2019"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space5"
+                android:fontFamily="@font/poppins_regular"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text16"
+            android:padding="@dimen/space7"
+            android:text="Start Time"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/startTimeLl"
+            >
+
+            <EditText
+                android:id="@+id/startTimeEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space7"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="@dimen/space10"
+                android:textSize="@dimen/text14"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:hint="04:32 pm"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space5"
+                android:fontFamily="@font/poppins_regular"/>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text16"
+            android:padding="@dimen/space7"
+            android:text="Duration"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/duartionLl"
+            >
+
+            <EditText
+                android:id="@+id/durationEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space7"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="@dimen/space10"
+                android:textSize="@dimen/text14"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:hint="30:00 min"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space5"
+                android:fontFamily="@font/poppins_regular"/>
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text16"
+            android:padding="@dimen/space7"
+            android:text="Calories"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ed_drawalbe"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ed_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space7"
+            android:textSize="@dimen/text14"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/colorless"
+            android:hint="Calories Burn"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/resetCaloriesBtn"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+
+            />
+
+            <Button
+                android:id="@+id/resetCaloriesBtn"
+                android:padding="@dimen/space7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space55"
+            android:text="LOG IT"
+            android:textColor="@color/white"
+            android:id="@+id/logItBtn"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text16"
+            android:background="@drawable/background_button"
+            android:layout_marginBottom="@dimen/space30"
+            android:layout_marginTop="@dimen/space20"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

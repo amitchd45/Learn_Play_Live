@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text14"
+            android:textColor="@color/black"
+            android:text="Log Weight"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/save_Tv"
+            android:padding="@dimen/space5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text12"
+            android:textColor="@color/orange"
+            android:text="Save"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space10"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginBottom="@dimen/space20">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text12"
+        android:layout_marginTop="@dimen/space15"
+        android:text="Date"/>
+    <EditText
+        android:id="@+id/logWeightCalander"
+        android:layout_width="@dimen/space150"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text12"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/space10"
+        android:editable="false"
+        android:clickable="false"
+        android:longClickable="false"
+        android:hint="Today"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text12"
+            android:layout_marginTop="@dimen/space15"
+            android:text="Weight"/>
+        <EditText
+            android:layout_width="@dimen/space150"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text12"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:layout_marginTop="@dimen/space10"
+            android:hint="68"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text12"
+            android:layout_marginTop="@dimen/space15"
+            android:text="% Body Fat"/>
+        <EditText
+            android:layout_width="@dimen/space150"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text12"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:layout_marginTop="@dimen/space10"
+            android:hint="25"/>
+
+    </LinearLayout>
+
+</LinearLayout>

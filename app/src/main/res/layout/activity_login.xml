@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/topbar_login"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        android:layout_marginTop="@dimen/space5">
+
+
+
+        <ImageView
+            android:layout_width="@dimen/space150"
+            android:layout_height="@dimen/space150"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, Sign in to continue"
+            android:textSize="@dimen/text16"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginLeft="@dimen/space10"/>
+
+
+
+        <EditText
+            android:id="@+id/email_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_close_envelope"
+            android:paddingLeft="@dimen/space10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/space20"
+            android:drawablePadding="@dimen/space20"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text16"
+            />
+
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_locked_padlock"
+            android:paddingLeft="@dimen/space10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/space20"
+            android:drawablePadding="@dimen/space20"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text16"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space20"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginTop="@dimen/space10">
+
+            <TextView
+                android:id="@+id/forgotPassword_Tv"
+                android:padding="@dimen/space3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:layout_gravity="right"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/space10"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space55"
+            android:layout_marginTop="@dimen/space20"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="@dimen/space10"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space10"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+           <ImageView
+               android:id="@+id/facebookLogin"
+               android:layout_width="@dimen/space100"
+               android:layout_height="@dimen/space100"
+               android:src="@drawable/facebook"/>
+
+            <ImageView
+                android:id="@+id/gmailLogin"
+                android:layout_width="@dimen/space100"
+                android:layout_height="@dimen/space100"
+                android:src="@drawable/google"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account ?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text14"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/text16"
+            android:padding="@dimen/space3"
+            android:textStyle="bold"
+            android:id="@+id/tv_register_login"/>
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeBottom.Fitness.FitnessActivity.FitnessExerciseActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space200"
+            android:id="@+id/exercise_top_lay"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space200"
+                android:scaleType="fitXY"
+                android:background="@drawable/fitness_exercise_bg"
+                android:id="@+id/exercise_bg_img"/>
+
+        <include layout="@layout/topbar2"
+            android:id="@+id/top_fitness"
+            />
+            <TextView
+                android:id="@+id/tt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercise"
+                android:layout_marginLeft="@dimen/space10"
+                android:textSize="@dimen/text16"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:layout_above="@+id/health_exercise"
+                />
+
+            <TextView
+                android:id="@+id/health_exercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health &amp; Fitness"
+                android:layout_marginLeft="@dimen/space10"
+                android:layout_marginBottom="@dimen/space10"
+                android:textSize="@dimen/text12"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_text"
+            android:layout_below="@+id/exercise_top_lay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space15"
+            android:layout_marginRight="@dimen/space15"
+           >
+
+        <ImageView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space15"
+            android:id="@+id/color_img"
+            android:src="@drawable/exercise_color_icon"/>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/addedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text14"
+                android:text="Added"
+                android:textColor="@color/orange"
+                android:layout_toRightOf="@id/color_img"
+                android:layout_marginLeft="@dimen/space15"
+                android:layout_marginTop="@dimen/space15"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/color_img"
+                android:layout_toRightOf="@id/color_img"
+                android:layout_marginLeft="@dimen/space15"
+                android:id="@+id/ll_1"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Tv_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/text12"
+                android:text="*The number of exercises your Lorem Ipsum divice can auto-detect will vary by device."
+                android:textColor="@color/orange"
+                android:layout_marginTop="@dimen/space15"
+                />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/text12"
+                    android:text="@string/exercise_bold_text"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/space15"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_1"
+                android:id="@+id/ll_2"
+                android:orientation="vertical">
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/space20"-->
+<!--                        android:layout_height="@dimen/space20"-->
+<!--                        android:layout_marginTop="@dimen/space15"-->
+<!--                        android:id="@+id/colorLess_img"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:src="@drawable/ic_checked"-->
+<!--                        android:background="@drawable/background_circle_grey"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/point1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:textSize="@dimen/text12"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:text="Select with activities get auto-recognized as exercise."-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_toRightOf="@id/colorLess_img"-->
+<!--                        android:layout_marginLeft="@dimen/space15"-->
+<!--                        android:layout_marginTop="@dimen/space15"-->
+<!--                        />-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/space20"-->
+<!--                        android:layout_height="@dimen/space20"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:layout_marginTop="@dimen/space15"-->
+<!--                        android:id="@+id/colorLess_img1"-->
+<!--                        android:src="@drawable/ic_checked"-->
+<!--                        android:background="@drawable/background_circle_grey"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/point2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:textSize="@dimen/text12"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:text="Set a weekly exercise goal."-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_toRightOf="@id/colorLess_img1"-->
+<!--                        android:layout_marginLeft="@dimen/space15"-->
+<!--                        android:layout_marginTop="@dimen/space15"-->
+<!--                        />-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="@dimen/space20"-->
+<!--                        android:layout_marginTop="@dimen/space15"-->
+<!--                        android:id="@+id/colorLess_img2"-->
+<!--                        android:src="@drawable/ic_checked"-->
+<!--                        android:background="@drawable/background_circle_grey"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/point3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins_regular"-->
+<!--                        android:textSize="@dimen/text12"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:text="We can auto-detect upto 7 differrent exercises.*"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_toRightOf="@id/colorLess_img2"-->
+<!--                        android:layout_marginLeft="@dimen/space15"-->
+<!--                        android:layout_marginTop="@dimen/space15"-->
+<!--                        />-->
+<!--                </RelativeLayout>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:layout_marginRight="@dimen/space15"
+                    android:layout_marginLeft="@dimen/space15"
+                    android:id="@+id/pointRecyclerView"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space55"
+        android:text="Add to Today"
+        android:textColor="@color/white"
+        android:background="@drawable/background_button"
+        android:layout_marginTop="@dimen/space30"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text18"
+        android:padding="@dimen/space10"
+        android:layout_marginBottom="@dimen/space30"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:id="@+id/addExerciseBtn"/>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space55"
+        android:text="OPEN"
+        android:textColor="@color/white"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/text18"
+        android:padding="@dimen/space10"
+        android:layout_marginLeft="@dimen/space15"
+        android:layout_marginRight="@dimen/space15"
+        android:layout_marginBottom="@dimen/space30"
+        android:id="@+id/openExerciseBtn"/>
+
+</RelativeLayout>
